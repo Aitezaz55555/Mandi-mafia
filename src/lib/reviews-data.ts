@@ -171,7 +171,7 @@ export const pressMentionsList: PressMention[] = [
   {
     id: "pr-2",
     publication: "Deccan Gourmet",
-    summary: "Redefining casual setups in Vijayawada with a high-end, Speakeasy Speacilty fine dining experience.",
+    summary: "Redefining casual setups in Vijayawada with a high-end, Speakeasy specialty fine dining experience.",
     link: "https://google.com",
     logoText: "DECCAN G.",
   },

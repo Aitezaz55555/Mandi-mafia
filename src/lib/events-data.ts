@@ -60,7 +60,7 @@ export const eventTypesList: EventType[] = [
     description: "Establish corporate bonds over premium shared platters. Silent group rooms, corporate dining credentials, and dedicated concierge host assists.",
     capacity: "15-35 Guests",
     startingPrice: "₹15,000",
-    image: "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: "catering",
@@ -68,7 +68,7 @@ export const eventTypesList: EventType[] = [
     description: "Take the syndicate kitchen to your site. High-end buffet setups, live wood-fire grills, and dedicated servers for weddings or offices.",
     capacity: "50-500+ Guests",
     startingPrice: "₹45,000",
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=600&auto=format&fit=crop",
   },
 ];
 
