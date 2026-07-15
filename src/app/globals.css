@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d0d;
+  --foreground: #fdfbf7;
+
+  --card: #1a1a1a;
+  --card-foreground: #fdfbf7;
+
+  --popover: #1a1a1a;
+  --popover-foreground: #fdfbf7;
+
+  --primary: #d4af37;
+  --primary-foreground: #0d0d0d;
+
+  --secondary: #4a0e17;
+  --secondary-foreground: #fdfbf7;
+
+  --muted: #262626;
+  --muted-foreground: #a0a0a0;
+
+  --accent: #8b0000;
+  --accent-foreground: #fdfbf7;
+
+  --destructive: #c62828;
+  --destructive-foreground: #fdfbf7;
+
+  --border: #262626;
+  --input: #262626;
+  --ring: #d4af37;
+
+  --radius: 0.25rem;
+}
+
+@theme {
+  /* Font Family Mappings */
+  --font-heading: var(--font-heading), Georgia, serif;
+  --font-body: var(--font-body), system-ui, sans-serif;
+  --font-gothic: var(--font-gothic), serif;
+
+  /* Custom Color Tokens (Raw Design Values) */
+  --color-obsidian: #0d0d0d;
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-muted: #262626;
+  --color-burgundy: #4a0e17;
+  --color-burgundy-hover: #5d121d;
+  --color-crimson: #8b0000;
+  --color-gold: #d4af37;
+  --color-gold-hover: #e9c46a;
+  --color-ivory: #fdfbf7;
+  --color-silver: #a0a0a0;
+
+  /* Semantic Color Mapping */
+  --color-success: #2e7d32;
+  --color-warning: #e65100;
+  --color-error: #c62828;
+
+  /* Standard Spacing Tokens (8px Base Grid) */
+  --spacing-space-1: 0.25rem; /* 4px */
+  --spacing-space-2: 0.5rem;  /* 8px */
+  --spacing-space-3: 0.75rem; /* 12px */
+  --spacing-space-4: 1rem;    /* 16px */
+  --spacing-space-6: 1.5rem;  /* 24px */
+  --spacing-space-8: 2rem;    /* 32px */
+  --spacing-space-12: 3rem;   /* 48px */
+  --spacing-space-16: 4rem;   /* 64px */
+  --spacing-space-24: 6rem;   /* 96px */
+  --spacing-space-32: 8rem;   /* 128px */
+
+  /* UI Tokens Mapping */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Easing and Transitions */
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-gold-glow: gold-glow-pulse 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+
+  @keyframes gold-glow-pulse {
+    0%, 100% {
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+    }
+  }
+}
+
+/* Base HTML Customizations */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessibility Focus States */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+/* Luxury Custom Text Selection */
+::selection {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/* Premium Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Reduced Motion Utility (Accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
