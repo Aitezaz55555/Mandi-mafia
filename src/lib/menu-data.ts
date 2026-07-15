@@ -106,7 +106,7 @@ export const menuDishes: Dish[] = [
     price: "₹890",
     description: "Tender lamb rib chops marinated in a garlic-rosemary reduction and seared to order on volcanic stone grids.",
     category: "starters",
-    image: "https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?q=80&w=600&auto=format&fit=crop",
     ingredients: ["Lamb chops", "Garlic-rosemary reduction", "Grilled peppers"],
     recommendations: "Best served medium. Highly aromatic with high texture finish.",
   },
