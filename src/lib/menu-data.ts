@@ -44,7 +44,7 @@ export const menuDishes: Dish[] = [
     category: "grand-feasts",
     serves: "5-6 Patrons",
     isSignature: true,
-    image: "https://images.unsplash.com/photo-1532636875304-0c8fe119ff91?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=600&auto=format&fit=crop",
     ingredients: ["Lamb ribs", "Seekh kababs", "Shish taouk", "Grilled fish", "Spiced long-grain rice", "Garlic aioli", "Harissa dip"],
     recommendations: "Our largest option. Highly recommended for corporate teams and client dining.",
   },
